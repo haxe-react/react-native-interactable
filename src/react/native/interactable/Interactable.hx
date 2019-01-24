@@ -1,5 +1,7 @@
 package react.native.interactable;
 import react.native.api.Animated.AnimatedValue;
+import react.native.component.props.ViewProps;
+import react.ReactComponent.ReactComponentOfProps;
 
 @:jsRequire('react-native-interactable')
 extern class Interactable {
