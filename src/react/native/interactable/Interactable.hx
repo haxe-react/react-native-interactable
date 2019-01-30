@@ -126,6 +126,7 @@ typedef INativeDragEvent = {
 	state: NativeDragEventState,
 	x: Float,
 	y: Float,
+	targetSnapPointId: String
 }
 
 typedef IDragEvent = {
