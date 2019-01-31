@@ -18,7 +18,7 @@ typedef SnapParams = {
 	index:Int,
 }
 
-typedef VelocityParams {
+typedef VelocityParams = {
 	x: Int,
 	y: Int,
 }
