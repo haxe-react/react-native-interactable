@@ -10,7 +10,19 @@ extern class Interactable {
 
 @:jsRequire('react-native-interactable', 'View')
 extern class InteractableView extends ReactComponentOfProps<InteractableViewProps> {
+	function snapTo(params:SnapParams):Void;
+	function setVelocity(params:VelocityParams):Void;
 }
+
+typedef SnapParams = {
+	index:Int,
+}
+
+typedef VelocityParams {
+	x: Int,
+	y: Int,
+}
+
 
 typedef InteractableViewProps = {
 	> ViewProps,
