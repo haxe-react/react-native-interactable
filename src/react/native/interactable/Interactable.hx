@@ -34,6 +34,7 @@ typedef InteractableViewProps = {
 	?horizontalOnly: Bool,
 	?verticalOnly: Bool,
 	?boundaries: IBoundaries,
+	?onSnapStart:ISnapEvent->Void,
 	?onSnap:ISnapEvent->Void,
 	?onStop:IStopEvent->Void,
 	?onDrag:IDragEvent->Void,
