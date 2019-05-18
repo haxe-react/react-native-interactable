@@ -12,10 +12,12 @@ extern class Interactable {
 extern class InteractableView extends ReactComponentOfProps<InteractableViewProps> {
 	function snapTo(params:SnapParams):Void;
 	function setVelocity(params:VelocityParams):Void;
+	function changePosition(params:ChangePositionParams):Void;
 }
 
 typedef SnapParams = {
-	index:Int,
+	?index:Int,
+	?id:String
 }
 
 typedef VelocityParams = {
@@ -23,6 +25,10 @@ typedef VelocityParams = {
 	y: Int,
 }
 
+typedef ChangePositionParams = {
+	x: Int,
+	y: Int,
+}
 
 typedef InteractableViewProps = {
 	> ViewProps,
@@ -34,8 +40,8 @@ typedef InteractableViewProps = {
 	?horizontalOnly: Bool,
 	?verticalOnly: Bool,
 	?boundaries: IBoundaries,
-	?onSnapStart:ISnapEvent->Void,
 	?onSnap:ISnapEvent->Void,
+	?onSnapStart:ISnapEvent->Void,
 	?onStop:IStopEvent->Void,
 	?onDrag:IDragEvent->Void,
 	?onAlert:IAlertEvent->Void,
