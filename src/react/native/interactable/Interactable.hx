@@ -119,7 +119,7 @@ typedef IInitialPosition = {
 }
 
 typedef INativeSnapEvent = {
-	index: Float,
+	index: Int,
 	id: String,
 }
 
