@@ -26,8 +26,8 @@ typedef VelocityParams = {
 }
 
 typedef ChangePositionParams = {
-	x: Int,
-	y: Int,
+	x: Float,
+	y: Float,
 }
 
 typedef InteractableViewProps = {
